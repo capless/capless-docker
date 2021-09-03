@@ -1,2 +1,4 @@
-FROM capless/capless-docker:2
-RUN apk update && apk add build-base libzmq musl-dev python3 python3-dev zeromq-dev
+FROM python:3.9
+RUN mkdir code
+WORKDIR /code
+RUN pip install poetry
