@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.12-alpine
 RUN mkdir code
 WORKDIR /code
 RUN apk update && apk upgrade  && apk add --no-cache gcc make libressl-dev \
